@@ -9,3 +9,15 @@
 </head>
 <body>
     
+<header>
+    <div class="container">
+    <?php
+    wp_nav_menu( 
+        array(
+           "theme_location" => "header-menu" ,
+           "menu_class" => "header-menu-style"
+        )
+     )
+     ?>
+     </div>
+</header>

@@ -1,0 +1,29 @@
+header {
+  height: 100px;
+  width: 100%;
+  background: #111;
+}
+
+.page-wrap {
+  padding: 100px;
+}
+
+header .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+header .header-menu-style ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+header .header-menu-style li a {
+  color: #fff;
+  padding-right: 20px;
+  text-decoration: none;
+}
