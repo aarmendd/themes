@@ -9,21 +9,38 @@ header {
 }
 
 header .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
-header .header-menu-style ul {
+header .header-menu-style {
   list-style-type: none;
   margin: 0;
   padding: 0;
   display: flex;
 }
 
+header .header-menu-style li {
+  position: relative;
+}
+
 header .header-menu-style li a {
   color: #fff;
-  padding-right: 20px;
+  padding: 0.25rem 1rem;
   text-decoration: none;
+}
+
+header .header-menu-style li .sub-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+header .header-menu-style .menu-item-has-children:hover .sub-menu {
+  display: flex;
 }
