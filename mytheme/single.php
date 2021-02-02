@@ -8,6 +8,10 @@
     </h1>
 
     <?php get_template_part( "includes/section", "blogcontent");?>
+
+    <!-- Link for the page break -->
+    <?php wp_link_pages();?>
+    
 </div>
 
  <?php get_footer();?>
