@@ -50,3 +50,24 @@ function my_sidebars(){
 }
 add_action("widgets_init","my_sidebars");
 
+// Custom post types
+
+function post_type()
+{
+    $args = array(
+        'labels' => array(
+            'name' => 'Cars',
+            'singular_name' => 'Car',
+        ),
+        //'hierarchical' => true, if true it acts as a page, false it acts as a post
+        'menu_icon' => 'dashicons-images-alt2',
+        'public' => true,
+        'has_archive' => true,
+        'supports' => array('title', 'editor', 'thumbnail'),
+        //'rewrite' => array('slug' => 'my-cars'),
+    );
+
+    register_post_type('cars',$args);
+}
+add_action('init','post_type');
+
