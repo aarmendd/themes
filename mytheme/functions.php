@@ -59,7 +59,7 @@ function post_type()
             'name' => 'Cars',
             'singular_name' => 'Car',
         ),
-        //'hierarchical' => true, if true it acts as a page, false it acts as a post
+        'hierarchical' => true, // if true it acts as a page, false it acts as a post
         'menu_icon' => 'dashicons-images-alt2',
         'public' => true,
         'has_archive' => true,
@@ -70,4 +70,20 @@ function post_type()
     register_post_type('cars',$args);
 }
 add_action('init','post_type');
+
+// Taxonomy
+
+function my_taxonomy(){
+    $args = array(
+        'labels' => array(
+            'name' => 'Brands',
+            'singular_name' => 'Brand',
+        ),
+        'public' => true,
+        'hierarchical' => true, //if false it acts as a tag
+    );
+
+    register_taxonomy('brands', array('cars'), $args);
+}
+add_action('init','my_taxonomy');
 
