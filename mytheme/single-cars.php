@@ -25,6 +25,10 @@
             Registration: <?php the_field('registration');?>
         </li>
     </ul>
+
+    <?php if( get_field('gallery') ): ?>
+    <img src="<?php the_field('gallery'); ?>" />
+    <?php endif; ?>
     
 </div>
 
