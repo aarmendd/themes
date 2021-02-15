@@ -63,7 +63,7 @@ function post_type()
         'menu_icon' => 'dashicons-images-alt2',
         'public' => true,
         'has_archive' => true,
-        'supports' => array('title', 'editor', 'thumbnail'),
+        'supports' => array('title', 'editor', 'thumbnail', 'custom-fields'),
         //'rewrite' => array('slug' => 'my-cars'),
     );
 
