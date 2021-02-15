@@ -29,3 +29,15 @@
 </div>
 
  <?php get_footer();?>
+
+ <!-- //Loop for the repeater in ACF Pro -->
+ <!-- <h3>Features</h3>
+    <ul>
+         <!-- <?php if(have_rows('id of the field')):?> -->
+            <!-- <?php while(have_rows('id of the field')): the_row(); $feature = get_sub_field('id of the subfield');?> -->
+                <!-- <li> -->
+                    <!-- <?php echo $feature;?> -->
+                <!-- </li> -->
+            <!-- <?php endwhile;?> -->
+        <!-- <?php endif;?> --> 
+    <!-- </ul>        -->
